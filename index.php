@@ -3,7 +3,7 @@
 $servername = "sql7.freemysqlhosting.net";
 $username ="sql7373516";
 $password = "ShsEsc4Kim";
-$dbname = "sql7373516s";
+$dbname = "sql7373516";
 
 $conn= new mysqli($servername,$username,$password,$dbname);
 
