@@ -1,7 +1,7 @@
 
 <?php
 
-$conn = new mysqli("sql7.freemysqlhosting.net","sql7373514","sql7373514","8gllrQ1aUJ");
+$conn = new mysqli("sql7.freemysqlhosting.net","sql7373516","sql7373516","ShsEsc4Kim");
 $sql = "SELECT * FROM pracownicy";
 $wynik = mysqli_query($conn, $sql);
 
