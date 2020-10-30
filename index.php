@@ -1,7 +1,6 @@
-
 <?php
 $servername = "sql7.freemysqlhosting.net";
-$username ="sql7373516";
+$username = "sql7373516";
 $password = "ShsEsc4Kim";
 $dbname = "sql7373516";
 
@@ -22,3 +21,4 @@ echo("</tr>");
 }
 echo('</table>');
 ?>
+
