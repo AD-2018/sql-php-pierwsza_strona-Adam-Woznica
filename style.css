@@ -1,7 +1,8 @@
 body {
     background-color: powderblue;
-  }
+    tr:hover {background-color: pink;}
+}
   h3 {
     color:darkred;
   }
-  tr:hover {background-color: pink;}
+  
