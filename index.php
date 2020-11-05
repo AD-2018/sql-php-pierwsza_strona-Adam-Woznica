@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <h1>Adam Woźnica</h1>
-https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica
+<a href=https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica>EXIT</a>
 </head>
 <body>
 <?php
