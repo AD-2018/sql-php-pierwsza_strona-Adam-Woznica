@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
+<h1>Adam Woźnica</h1>
 </head>
 <body>
 <?php
