@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
 <?php
 $servername = "sql7.freemysqlhosting.net";
 $username = "sql7373516";
@@ -22,3 +28,6 @@ echo("</tr>");
 echo('</table>');
 ?>
 
+
+</body>
+</html>
