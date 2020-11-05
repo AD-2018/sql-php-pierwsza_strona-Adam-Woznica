@@ -4,3 +4,4 @@ body {
   h3 {
     color:darkred;
   }
+  tr:hover {background-color: pink;}
