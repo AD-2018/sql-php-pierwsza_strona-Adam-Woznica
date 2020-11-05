@@ -2,7 +2,8 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-<h1>Adam Woźnica</h3>
+<h1>Adam Woźnica</h1>
+https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica
 </head>
 <body>
 <?php
