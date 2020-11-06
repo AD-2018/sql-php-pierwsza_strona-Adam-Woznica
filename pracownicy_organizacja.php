@@ -119,7 +119,7 @@ echo("</tr>");
 echo('</table>');
 
 $sql ="select imie,nazwa_dzial from pracownicy,organizacja where id_org=dzial and imie like '%a'";
-echo("<h3>Zadanie 5</h3>");
+echo("<h3>Zadanie 6</h3>");
 echo("<h4>$sql</h4>");
 $result = mysqli_query($conn, $sql);
 
@@ -134,6 +134,21 @@ echo("</tr>");
 }
 echo('</table>');
 
+$sql ="select imie,nazwa_dzial from pracownicy,organizacja where id_org=dzial order by nazwa_dzial desc";
+echo("<h3>Zadanie 7</h3>");
+echo("<h4>$sql</h4>");
+$result = mysqli_query($conn, $sql);
+
+echo('<table border="1" class="tabela"');
+echo ("<tr>><th>imie</th><th>nazwa_dzial</th></tr>");
+while($row=mysqli_fetch_assoc($result)){
+echo("<tr>");
+    echo("<tr>");
+    echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td>");
+    echo("<tr>");
+echo("</tr>");
+}
+echo('</table>');
 
 ?>
 </body>
