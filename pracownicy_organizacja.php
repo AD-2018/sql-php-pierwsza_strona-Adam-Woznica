@@ -28,7 +28,7 @@ echo("<h4>$sql</h4>");
 $result = mysqli_query($conn, $sql);
 
 echo('<table border="1" class="tabela"');
-echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>zarobki</th><th>data_urodzenia</th></tr><th>id_org</th><th>nazwa_dzial</th>");
+echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>zarobki</th><th>data_urodzenia</th><th>id_org</th><th>nazwa_dzial</th></tr>");
 while($row=mysqli_fetch_assoc($result)){
 echo("<tr>");
     echo("<tr>");
