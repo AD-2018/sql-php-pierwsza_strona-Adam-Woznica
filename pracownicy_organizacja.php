@@ -22,7 +22,7 @@ $dbname = "sql7374842";
 
 $conn= new mysqli($servername,$username,$password,$dbname);
 
-$sql ="select * from pracownicy,organizacja";
+$sql ="select * from pracownicy,organizacja where id_org=dzial";
 echo("<h3>Czas tyka tik tak tik tak</h3>");
 echo("<h4>$sql</h4>");
 $result = mysqli_query($conn, $sql);
