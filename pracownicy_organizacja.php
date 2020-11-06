@@ -22,8 +22,8 @@ $dbname = "sql7374842";
 
 $conn= new mysqli($servername,$username,$password,$dbname);
 
-$sql ="select * from pracownicy";
-echo("<h3>Jest Pan Zadowolony?</h3>");
+$sql ="select * from pracownicy,organizacja";
+echo("<h3>Czas tyka tik tak tik tak</h3>");
 echo("<h4>$sql</h4>");
 $result = mysqli_query($conn, $sql);
 
@@ -32,7 +32,7 @@ echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>zarobki</th><th>
 while($row=mysqli_fetch_assoc($result)){
 echo("<tr>");
     echo("<tr>");
-    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td>");
+    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td><td>".$row['id_org']."</td><td>".$row['nazwa_dzial']."</td>");
     echo("<tr>");
 echo("</tr>");
 }
