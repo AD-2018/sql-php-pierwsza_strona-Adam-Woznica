@@ -16,9 +16,9 @@
     
 <?php
 $servername = "sql7.freemysqlhosting.net";
-$username = "sql7373516";
-$password = "ShsEsc4Kim";
-$dbname = "sql7373516";
+$username = "sql7374842";
+$password = "4w2p5Zi8PR";
+$dbname = "sql7374842";
 
 $conn= new mysqli($servername,$username,$password,$dbname);
 
