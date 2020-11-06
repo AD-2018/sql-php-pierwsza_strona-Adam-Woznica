@@ -44,7 +44,7 @@ echo("<h4>$sql</h4>");
 $result = mysqli_query($conn, $sql);
 
 echo('<table border="1" class="tabela"');
-echo ("<tr>><th>imie</th><th>dzial</th></tr>");
+echo ("<tr><th>imie</th><th>dzial</th></tr>");
 while($row=mysqli_fetch_assoc($result)){
 echo("<tr>");
     echo("<tr>");
@@ -140,7 +140,7 @@ echo("<h4>$sql</h4>");
 $result = mysqli_query($conn, $sql);
 
 echo('<table border="1" class="tabela"');
-echo ("<tr>><th>imie</th><th>nazwa_dzial</th></tr>");
+echo ("<tr><th>imie</th><th>nazwa_dzial</th></tr>");
 while($row=mysqli_fetch_assoc($result)){
 echo("<tr>");
     echo("<tr>");
@@ -177,6 +177,22 @@ while($row=mysqli_fetch_assoc($result)){
 echo("<tr>");
     echo("<tr>");
     echo("<td>".$row['imie']."</td>");
+    echo("<tr>");
+echo("</tr>");
+}
+echo('</table>');
+
+$sql ="select imie,nazwa_dzial,zarobki from pracownicy,organizacja where id_org=dzial and imie not like '%a' order by nazwa_dzial,zarobki asc";
+echo("<h3>Zadanie 10</h3>");
+echo("<h4>$sql</h4>");
+$result = mysqli_query($conn, $sql);
+
+echo('<table border="1" class="tabela"');
+echo ("<tr><th>imie</th><th>zarobki</th><th>nazwa_dzial</th></tr>");
+while($row=mysqli_fetch_assoc($result)){
+echo("<tr>");
+    echo("<tr>");
+    echo("<td>".$row['imie']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td>");
     echo("<tr>");
 echo("</tr>");
 }
