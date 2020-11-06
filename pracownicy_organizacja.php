@@ -204,7 +204,7 @@ echo("<h4>$sql</h4>");
 $result = mysqli_query($conn, $sql);
 
 echo('<table border="1" class="tabela"');
-echo ("<tr><th>imie</th>th>zarobki</th></tr>");
+echo ("<tr><th>imie</th><th>zarobki</th></tr>");
 while($row=mysqli_fetch_assoc($result)){
 echo("<tr>");
     echo("<tr>");
