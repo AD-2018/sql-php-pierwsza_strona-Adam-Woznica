@@ -39,7 +39,7 @@ echo("</tr>");
 echo('</table>');
 
 $sql ="select imie,dzial from pracownicy where dzial= 2";
-echo("<h4>Zadanie 1</h4>");
+echo("<h3>Zadanie 1</h3>");
 echo("<h4>$sql</h4>");
 $result = mysqli_query($conn, $sql);
 
@@ -81,6 +81,22 @@ while($row=mysqli_fetch_assoc($result)){
 echo("<tr>");
     echo("<tr>");
     echo("<td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
+    echo("<tr>");
+echo("</tr>");
+}
+echo('</table>');
+
+$sql ="select imie,dzial from pracownicy where dzial=1 or dzial=4";
+echo("<h3>Zadanie 4</h3>");
+echo("<h4>$sql</h4>");
+$result = mysqli_query($conn, $sql);
+
+echo('<table border="1" class="tabela"');
+echo ("<tr><th>imie</th><th>dzial</th></tr>");
+while($row=mysqli_fetch_assoc($result)){
+echo("<tr>");
+    echo("<tr>");
+    echo("<td>".$row['imie']."</td><td>".$row['dzial']."</td>");
     echo("<tr>");
 echo("</tr>");
 }
