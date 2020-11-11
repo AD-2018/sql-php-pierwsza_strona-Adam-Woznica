@@ -55,7 +55,7 @@ echo("</tr>");
 }
 echo('</table>');
 
-$sql ="select SUM(zarobki) from pracownicy where imie not like '%a'";
+$sql ="select imie,SUM(zarobki) from pracownicy where imie not like '%a'";
 echo("<h3>Zadanie 2</h3>");
 echo("<h4>$sql</h4>");
 $result = mysqli_query($conn, $sql);
@@ -71,7 +71,7 @@ echo("</tr>");
 }
 echo('</table>');
 
-$sql ="select SUM(zarobki) from pracownicy where imie not like '%a' and (dzial=3 or dzial=2)";
+$sql ="select imie,SUM(zarobki) from pracownicy where imie not like '%a' and (dzial=3 or dzial=2)";
 echo("<h3>Zadanie 3</h3>");
 echo("<h4>$sql</h4>");
 $result = mysqli_query($conn, $sql);
