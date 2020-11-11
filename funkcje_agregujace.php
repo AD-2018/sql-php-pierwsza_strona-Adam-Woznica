@@ -55,6 +55,37 @@ echo("</tr>");
 }
 echo('</table>');
 
+$sql ="select SUM(zarobki) from pracownicy where imie not like '%a'";
+echo("<h3>Zadanie 2</h3>");
+echo("<h4>$sql</h4>");
+$result = mysqli_query($conn, $sql);
+
+echo('<table border="1" class="tabela"');
+echo ("<tr><th>imie</th><th>SUM(zarobki)</th></tr>");
+while($row=mysqli_fetch_assoc($result)){
+echo("<tr>");
+    echo("<tr>");
+    echo("<td>".$row['imie']."</td><td>".$row['SUM(zarobki)']."</td>");
+    echo("<tr>");
+echo("</tr>");
+}
+echo('</table>');
+
+$sql ="select SUM(zarobki) from pracownicy where imie not like '%a' and (dzial=3 or dzial=2)";
+echo("<h3>Zadanie 3</h3>");
+echo("<h4>$sql</h4>");
+$result = mysqli_query($conn, $sql);
+
+echo('<table border="1" class="tabela"');
+echo ("<tr><th>imie</th><th>dzial</th><th>SUM(zarobki)</th>");
+while($row=mysqli_fetch_assoc($result)){
+echo("<tr>");
+    echo("<tr>");
+    echo("<td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['SUM(zarobki)']."</td>");
+    echo("<tr>");
+echo("</tr>");
+}
+echo('</table>');
 
 ?>
 
