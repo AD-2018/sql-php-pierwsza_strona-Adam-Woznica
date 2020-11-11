@@ -219,22 +219,55 @@ echo('</table>');
 
 echo("<h2>LIMIT</h2>");
 
-$sql ="select * from pracownicy,organizacja where id_org=dzial";
-echo("<h3>Czas tyka tik tak tik tak</h3>");
+$sql ="select * from pracownicy,organizacja where id_org=dzial and dzial=4 limit 2 ";
+echo("<h3>Zadanie 12</h3>");
 echo("<h4>$sql</h4>");
 $result = mysqli_query($conn, $sql);
 
 echo('<table border="1" class="tabela"');
-echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>zarobki</th><th>data_urodzenia</th><th>id_org</th><th>nazwa_dzial</th></tr>");
+echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th></tr>");
 while($row=mysqli_fetch_assoc($result)){
 echo("<tr>");
     echo("<tr>");
-    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td><td>".$row['id_org']."</td><td>".$row['nazwa_dzial']."</td>");
+    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td>");
     echo("<tr>");
 echo("</tr>");
 }
 echo('</table>');
+    
 
+$sql ="select * from pracownicy,organizacja where id_org=dzial and imie like'%a' and (dzial=4 or dzial=2) limit 3 ";
+echo("<h3>Zadanie 13</h3>");
+echo("<h4>$sql</h4>");
+$result = mysqli_query($conn, $sql);
+
+echo('<table border="1" class="tabela"');
+echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th></tr>");
+while($row=mysqli_fetch_assoc($result)){
+echo("<tr>");
+    echo("<tr>");
+    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td>");
+    echo("<tr>");
+echo("</tr>");
+}
+echo('</table>');
+    
+    
+$sql ="select * from pracownicy,organizacja where id_org=dzial order by data_urodzenia limit 1 ";
+echo("<h3>Zadanie 14</h3>");
+echo("<h4>$sql</h4>");
+$result = mysqli_query($conn, $sql);
+
+echo('<table border="1" class="tabela"');
+echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th></tr>");
+while($row=mysqli_fetch_assoc($result)){
+echo("<tr>");
+    echo("<tr>");
+    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['nazwa_dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td>");
+    echo("<tr>");
+echo("</tr>");
+}
+echo('</table>');
 
 
 ?>
