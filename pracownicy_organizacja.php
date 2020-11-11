@@ -235,21 +235,7 @@ echo("</tr>");
 }
 echo('</table>');
 
-$sql ="select imie ,zarobki ,dzial from pracownicy where imie like '%a' and dzial= 4 limit 2";
-echo("<h3>Zadanie 12</h3>");
-echo("<h4>$sql</h4>");
-$result = mysqli_query($conn, $sql);
 
-echo('<table border="1" class="tabela"');
-echo ("<tr><th>imie</th><th>dzial</th><th>zarobki</th></tr>");
-while($row=mysqli_fetch_assoc($result)){
-echo("<tr>");
-    echo("<tr>");
-    echo("<td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
-    echo("<tr>");
-echo("</tr>");
-}
-echo('</table>');
 
 ?>
 </body>
