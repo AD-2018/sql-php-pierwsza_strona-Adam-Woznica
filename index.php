@@ -6,13 +6,14 @@
 <body>
     
     <h1>Adam Woźnica</h1>
-    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica">EXIT</a>
-    
-    <div class="nav">
+    <nav>
+      <ul>
+        <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica">EXIT</a>
          <a href="index.php">Strona Główna</a>   
-         <a href="pracownicy_organizacja.php">Pracow. i Org.</a>   
+         <a href="pracownicy_organizacja.php">Pracow. i Org.</a>
          <a href="funkcje_agregujace.php">Funkcje Agregujace</a>   
-    </div>
+      </ul>
+        </nav>
     
 <?php
 $servername = "sql7.freemysqlhosting.net";
@@ -38,7 +39,7 @@ echo("</tr>");
 }
 echo('</table>');
 $sql ="select avg(zarobki),nazwa_dzial from pracownicy,organizacja where id_org=dzial and imie not like '%a' group by dzial having avg(zarobki)<35"; 
-echo("<h3>zadanie1</h3>"); 
+echo("<h4>zadanie1</h4>"); 
 echo($sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
