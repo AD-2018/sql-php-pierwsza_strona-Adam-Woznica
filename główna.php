@@ -2,14 +2,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
     <h1>Adam Woźnica</h1>
     <nav>
         <ul>
-            <li ><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica">EXIT</a></li>
+            <li><button type="submit"><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica">EXIT</a></li></button>
         </ul>
     </nav>
     
