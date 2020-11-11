@@ -11,10 +11,7 @@
             <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica">EXIT</a></li>
             <li><a href="index.php">Strona Główna</a></li>   
             <li><a href="pracownicy_organizacja.php">Pracow. i Org.</a></li>
-            <li><a href="funkcje_agregujace.php">Funkcje Agregujace</a></li>  
-        
-        
-        
+            <li><a href="funkcje_agregujace.php">Funkcje Agregujace</a></li> 
           </ul>
     </nav>
     
