@@ -65,7 +65,7 @@ echo ("<tr><th>Suma zarobków kobiet</th></tr>");
 while($row=mysqli_fetch_assoc($result)){
 echo("<tr>");
     echo("<tr>");
-    echo("<><td>".$row['SUM(zarobki)']."</td>");
+    echo("<td>".$row['SUM(zarobki)']."</td>");
     echo("<tr>");
 echo("</tr>");
 }
