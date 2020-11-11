@@ -10,3 +10,20 @@ body {
     color: white;
   }
   tr:nth-child(even) {background-color: pink;}
+  nav a{
+    display: block;
+    background-color: yellow;
+    color: violet;
+    border-radius: 4em;
+    padding: 1em;
+    text-decoration: none;
+    transition-duration: 1ms;
+    width: 5em;
+}
+nav a:hover{
+    color: tomato;
+    background-color: teal;
+    padding: 1.5em;
+    font-size: 1em;
+    width: 5em;
+}
