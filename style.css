@@ -10,7 +10,10 @@ body {
     color: white;
   }
   tr:nth-child(even) {background-color: pink;}
-  nav a{
+  nav ul{
+    list-style: none;
+}
+nav a{
     display: block;
     background-color: yellow;
     color: violet;
