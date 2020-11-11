@@ -9,7 +9,7 @@
     <h1>Adam Woźnica</h1>
     <nav>
         <ul>
-            <li><button type="submit"><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica">EXIT</a></li></button>
+            <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica">EXIT</a></li>
         </ul>
     </nav>
     
