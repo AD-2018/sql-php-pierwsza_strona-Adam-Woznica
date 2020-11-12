@@ -87,8 +87,35 @@ echo("</tr>");
 }
 echo('</table>');
 
+$sql ="select AVG(zarobki) from pracownicy where imie not like '%a'";
+echo("<h3>Zadanie 4</h3>");
+echo("<h4>$sql</h4>");
+$result = mysqli_query($conn, $sql);
+
+echo('<table border="1" class="tabela"');
+echo ("<tr><th>średnia zarobków facetów</th>");
+while($row=mysqli_fetch_assoc($result)){
+echo("<tr>");
+    echo("<tr>");
+    echo("<td>".$row['SUM(zarobki)']."</td>");
+    echo("<tr>");
+echo("</tr>");
+}
+echo('</table>');
+
+
+
+
+
+
+
+
+
+
+
 ?>
-    <h2> Jest Git? </h2>
+
+<h2>A guziki są piękne      >:|</h2>
 
 </body>
 </html>
