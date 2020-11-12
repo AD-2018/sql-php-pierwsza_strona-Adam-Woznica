@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,10 +8,10 @@
     <h1>Adam Woźnica</h1>
     <nav>
         <ul>
-            <li><a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica">EXIT</a></li>
-            <li><a href="index.php">Strona Główna</a></li>   
-            <li><a href="pracownicy_organizacja.php">Pracow. i Org.</a></li>
-            <li><a href="funkcje_agregujace.php">Funkcje Agregujace</a></li> 
+            <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica">EXIT</a>
+            <a href="index.php">Strona Główna</a>
+            <a href="pracownicy_organizacja.php">Pracow. i Org.</a>
+            <a href="funkcje_agregujace.php">Funkcje Agregujace</a> 
           </ul>
     </nav>
     
@@ -25,7 +24,7 @@ $dbname = "sql7374842";
 $conn= new mysqli($servername,$username,$password,$dbname);
 
 $sql ="select * from pracownicy";
-echo("<h3>Jest Pan Zadowolony?</h3>");
+echo("<h3>Może Pan mówić co chce, ja jestem dumny z tych guzików</h3>");
 echo("<h4>$sql</h4>");
 $result = mysqli_query($conn, $sql);
 
