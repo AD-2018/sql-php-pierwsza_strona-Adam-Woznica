@@ -17,10 +17,10 @@
     </nav>
     
 <?php
-$servername = "sql7.freemysqlhosting.net";
-$username = "sql7374842";
-$password = "4w2p5Zi8PR";
-$dbname = "sql7374842";
+$servername = "mysql-michael-musiol.alwaysdata.net";
+$username = "218443_adam";
+$password = "Q@wertyuiop";
+$dbname = "michael-musiol_pracownicy_organizacja";
 
 $conn= new mysqli($servername,$username,$password,$dbname);
 
