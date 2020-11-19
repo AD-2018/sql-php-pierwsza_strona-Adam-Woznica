@@ -1,4 +1,9 @@
 <?php
-echo("jestes w formularze.php");
-echo $_POST['imie'];
+echo("Witam w formularz.php");
+
+echo("<ul>");
+	
+echo("<li>".$_POST["imie"]);
+		
+echo("<ul>");
 ?>
