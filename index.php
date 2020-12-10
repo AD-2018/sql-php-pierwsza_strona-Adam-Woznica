@@ -14,7 +14,7 @@
             <a href="funkcje_agregujace.php">Funkcje Agregujace</a>
             <a href="data_czas.php">Data i Czas</a>
             <a href="formularz.html">Formularze</a>
-            <a href="danedobazy.html">+ i -</a>
+            <a href="danedobazy.php">+ i -</a>
         </ul>
     </nav>
     
