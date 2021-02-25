@@ -5,7 +5,7 @@
 </head>
 <body>
     
-    <h1>Adam Woźnica !!</h1>
+    <h1>Adam Woźnica !</h1>
     <nav>
         <ul>
             <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica">EXIT</a>
