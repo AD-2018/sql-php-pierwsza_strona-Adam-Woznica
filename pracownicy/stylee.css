@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: powderblue;
+}
+nav ul{
+  list-style: none;
+}
+nav a{
+  display: block;
+  background-color: yellow;
+  color: violet;
+  border-radius: 4em;
+  padding: 1em;
+  text-decoration: none;
+  transition-duration: 1ms;
+  width: 5em;
+}
+nav a:hover{
+  color: tomato;
+  background-color: teal;
+  padding: 1.5em;
+  font-size: 1em;
+  width: 5em;
+}
+h3 {
+  color:darkred;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+tr:nth-child(even) {background-color: pink;}
