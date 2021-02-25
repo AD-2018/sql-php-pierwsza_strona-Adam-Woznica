@@ -19,11 +19,10 @@
     </nav>
     
 <?php
-$servername = "mysql-michael-musiol.alwaysdata.net";
-$username = "218443_adam";
-$password = "Q@wertyuiop";
-$dbname = "michael-musiol_pracownicy_organizacja";
-
+$servername = "mysql-kcz.alwaysdata.net";
+$username = "kcz";
+$password = "zaq1@WSX";
+$dbname = "kcz_20";
 $conn= new mysqli($servername,$username,$password,$dbname);
 
 $sql ="select * from pracownicy,organizacja where id_org=dzial";
