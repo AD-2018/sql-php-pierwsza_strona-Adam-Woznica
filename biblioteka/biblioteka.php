@@ -6,7 +6,7 @@
 <body>
     
 <div class="diw">
-    <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
+    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica">EXIT</a>
     <a class="link" href="../index.php">Strona Główna</a>
    
 </div>
