@@ -39,12 +39,9 @@
    <input type="submit" value="wywal">
 </form>
 <?php
-$servername = "mysql-kcz.alwaysdata.net";
-$username = "kcz";
-$password = "zaq1@WSX";
-$dbname = "kcz_20";
 
-$conn= new mysqli($servername,$username,$password,$dbname); 
+require_once("../connect.php");
+
 $sql ="select * from pracownicy"; 
 echo("<h3>Lista pracowników</h3>"); 
 echo("<h4>$sql</h4>");
