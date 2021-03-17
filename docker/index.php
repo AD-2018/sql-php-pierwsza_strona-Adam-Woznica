@@ -7,7 +7,7 @@
 <?php
 
 
-$servername = "localhost/phpmyadmin";
+$servername = "localhost:8083/phpmyadmin";
 $username = "root";
 $password = "root";
 $dbname = "tak";
