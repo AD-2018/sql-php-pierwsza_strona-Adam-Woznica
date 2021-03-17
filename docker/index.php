@@ -7,10 +7,10 @@
 <?php
 
 
-$servername = "localhost:8083/phpmyadmin";
-$username = "tom";
-$password = "a";
-$dbname = "tak";
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "tom";
 
 $conn= new mysqli($servername,$username,$password,$dbname);
 
