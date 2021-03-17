@@ -8,8 +8,8 @@
 
 
 $servername = "localhost:8083/phpmyadmin";
-$username = "root";
-$password = "root";
+$username = "tom";
+$password = "a";
 $dbname = "tak";
 
 $conn= new mysqli($servername,$username,$password,$dbname);
