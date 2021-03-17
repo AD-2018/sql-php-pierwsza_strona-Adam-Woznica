@@ -16,6 +16,7 @@
             <a href="pracownicy/formularz.html">Formularze</a>
             <a href="pracownicy/danedobazy.php">+ i -</a>
             <a href="biblioteka/biblioteka.php">Biblioteka</a>
+            <a href="docker/index.php">DOCKER</a>
     </nav>
     
 <?php
