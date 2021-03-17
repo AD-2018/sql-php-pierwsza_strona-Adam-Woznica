@@ -15,7 +15,7 @@ $dbname = "tak";
 $conn= new mysqli($servername,$username,$password,$dbname);
 
 $sql ="select * from pracownicy";
-echo("<h3>Może Pan mówić co chce, ja jestem dumny z tych guzików</h3>");
+echo("<h3>Może działa może nie</h3>");
 echo("<h4>$sql</h4>");
 $result = mysqli_query($conn, $sql);
 
