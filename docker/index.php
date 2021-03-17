@@ -8,7 +8,7 @@
 
 
 $servername = "db";
-$username = "root";
+$username = "tom";
 $password = "root";
 $dbname = "tom";
 
