@@ -42,7 +42,7 @@
         echo"<h1>Jednorożec tańczy, tańczy, tańczy, tańczy</h1>";
         require_once("../../connect.php");
 
-        $sql ="select * from projekty";
+        $sql ="select * from projekt";
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
