@@ -14,7 +14,7 @@
       <div class="container">
           <header>
               <?php
-              $sql = "SELECT * FROM produkty";
+              $sql ="select * from produkty";
               $wynik = mysqli_query($conn, $sql);
                   
                   echo("<br>");
