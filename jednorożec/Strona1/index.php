@@ -14,6 +14,8 @@
       <div class="container">
           <header>
               <?php
+              require_once("../../connect.php");
+
               $sql ="select * from produkty";
               $wynik = mysqli_query($conn, $sql);
                   
