@@ -76,7 +76,7 @@
               <?php
               require_once("../../connect.php");
 
-              $sql = "SELECT id, producent, produkt FROM Sklep, producenci, produkty WHERE produkty.id_produkt = Sklep.id_produkt AND producenci.id_producent = Sklep.id_producent";
+              $sql = "SELECT id, producent, produkt FROM Sklep, producenci, produkty WHERE produkty.id_produkt = Sklep.id_produkt AND producenci.id_prod = Sklep.id_prod";
               $wynik = mysqli_query($conn, $sql);
                   
                   echo("<br>");
