@@ -1,8 +1,8 @@
 <?php
-$servername = "mysql-kcz.alwaysdata.net";
-$username = "kcz";
-$password = "zaq1@WSX";
-$dbname = "kcz_20";
+$servername = "sql11.freemysqlhosting.net";
+$username = "sql11405635";
+$password = "hgVDwHQpEe";
+$dbname = "sql11405635";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
