@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="stylee.css">
+<link rel="stylesheet" href="../stylle.css">
 </head>
 <body>
     
