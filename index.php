@@ -21,12 +21,9 @@
     </nav>
     
 <?php
-$servername = "mysql-kcz.alwaysdata.net";
-$username = "kcz";
-$password = "zaq1@WSX";
-$dbname = "kcz_20";
+require_once("connect.php");
 
-$conn= new mysqli($servername,$username,$password,$dbname);
+
 
 $sql ="select * from pracownicy";
 echo("<h3>Może Pan mówić co chce, ja jestem dumny z tych guzików</h3>");
