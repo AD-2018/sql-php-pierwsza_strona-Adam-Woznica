@@ -27,7 +27,7 @@
             while($wiersz=mysqli_fetch_assoc($wynik))
             {
                 echo('<tr>');
-                echo('<td>'.$wiersz['id_chlop'].'</td>'.'<td>'.$wiersz['pracownik'].'</td>');
+                echo('<td>'.$wiersz['id_prawnik'].'</td>'.'<td>'.$wiersz['prawnik'].'</td>');
                 echo('</tr>');
             }
         
