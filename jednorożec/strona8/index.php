@@ -10,7 +10,9 @@
   <body>
     <div class="container">
       <header>
-        <h1>Dzień dobry</h1>
+      <?php
+        echo"<h1>Mielone dobre</h1>";
+        ?>
       </header>
       <nav>
         2

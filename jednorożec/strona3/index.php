@@ -10,8 +10,10 @@
   <body>
     <div class="container">
       <header>
-        <h1>RIP Krzysztof Krawczyk [*]</h1>
-      </header>
+        <?php
+        echo"<h1>RIP Krzysztof Krawczyk [*]</h1>";
+        ?>
+        </header>
       <nav>
         2
       </nav>

@@ -10,7 +10,9 @@
   <body>
     <div class="container">
       <header>
-        <h1>Witam</h1>
+        <?php
+        echo"<h1>Witam</h1>";
+        ?>
       </header>
       <nav>
         2

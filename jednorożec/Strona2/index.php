@@ -10,7 +10,9 @@
   <body>
     <div class="container">
       <header>
-        <h1>Jednorożec tańczy, tańczy, tańczy, tańczy</h1>
+        <?php
+        echo"<h1>Jednorożec tańczy, tańczy, tańczy, tańczy</h1>";
+        ?>
       </header>
       <nav>
         2
