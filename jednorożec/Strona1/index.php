@@ -13,8 +13,10 @@
 
       <div class="container">
           <header>
-              <h1>Tak</h1>
-          </header>
+              <?php
+              echo"<h1>Tak</h1>";
+              ?>
+              </header>
 
           <nav>
               Jednorożc Tak
