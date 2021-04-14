@@ -101,7 +101,7 @@
         5
  </aside>
       <footer>
-        4
+        4 gotowe
       </footer>
     </div>
   </body>
