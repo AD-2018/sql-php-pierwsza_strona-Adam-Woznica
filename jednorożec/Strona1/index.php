@@ -14,7 +14,26 @@
       <div class="container">
           <header>
               <?php
-              echo"<h1>Tak</h1>";
+              $sql = "SELECT * FROM produkty";
+              $wynik = mysqli_query($conn, $sql);
+                  
+                  echo("<br>");
+                  echo("Tabele");
+                  echo("<br>");
+                  echo($sql);
+                  echo('<table border="1">');
+                  echo('<th>id_produkt</th><th>produkt</th>');
+              
+                  while($wiersz=mysqli_fetch_assoc($wynik))
+                  {
+                      echo('<tr>');
+                      echo('<td>'.$wiersz['id_produkt'].'</td>'.'<td>'.$wiersz['produkt'].'</td>');
+                      echo('</tr>');
+                  }
+              
+                  echo('</table>');
+                  
+              echo("<br>");
               ?>
               </header>
 
