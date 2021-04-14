@@ -36,11 +36,39 @@
                   echo('</table>');
                   
               echo("<br>");
+
+        
               ?>
               </header>
 
           <nav>
               Jednorożc Tak
+              <?php
+              require_once("../../connect.php");
+
+              $sql ="select * from producenci";
+              $wynik = mysqli_query($conn, $sql);
+                  
+                  echo("<br>");
+                  echo("Tabele");
+                  echo("<br>");
+                  echo($sql);
+                  echo('<table border="1">');
+                  echo('<th>id_prod</th><th>producent</th>');
+              
+                  while($wiersz=mysqli_fetch_assoc($wynik))
+                  {
+                      echo('<tr>');
+                      echo('<td>'.$wiersz['id_prod'].'</td>'.'<td>'.$wiersz['producent'].'</td>');
+                      echo('</tr>');
+                  }
+              
+                  echo('</table>');
+                  
+              echo("<br>");
+
+        
+              ?>
           </nav>
 
           <main>
