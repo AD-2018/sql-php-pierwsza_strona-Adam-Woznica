@@ -73,6 +73,32 @@
 
           <main>
               Jednorożc Nie
+              <?php
+              require_once("../../connect.php");
+
+              $sql = "SELECT id, producent, produkt FROM Sklep, producenci, produkty WHERE produkty.id_produkt = sklep.id_produkt AND producenci.id_producent = sklep.id_producent";
+              $wynik = mysqli_query($conn, $sql);
+                  
+                  echo("<br>");
+                  echo("Tabele");
+                  echo("<br>");
+                  echo($sql);
+                  echo('<table border="1">');
+                  echo('<th>id</th><th>producent</th><th>produkt</th>');
+              
+                  while($wiersz=mysqli_fetch_assoc($wynik))
+                  {
+                      echo('<tr>');
+                      echo('<td>'.$wiersz['id'].'</td>'.'<td>'.$wiersz['producent'].'</td>'.'<td>'.$wiersz['produkt'].'</td>');
+                      echo('</tr>');
+                  }
+              
+                  echo('</table>');
+                  
+              echo("<br>");
+
+        
+              ?>
           </main>
 
           <aside>
