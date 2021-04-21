@@ -5,7 +5,7 @@
 </head>
 <body>
     
-    <h1>Adam Woźnica ! </h1>
+    <h1>Adam Woźnica</h1>
     <nav>
         <ul>
            <?php 
