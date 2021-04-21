@@ -9,4 +9,4 @@
 <a href="https://woznicaadam.herokuapp.com/pracownicy/danedobazy.php">+ i -</a>
 <a href="https://woznicaadam.herokuapp.com/biblioteka/biblioteka.php">Biblioteka</a>
 <a href="https://woznicaadam.herokuapp.com/docker/index.php">DOCKER</a>
-<a href="https://woznicaadam.herokuapp.com/jednoro%C5%BCec/indexx.html">Jednorożce</a>
+<a href="https://woznicaadam.herokuapp.com/jednoro%C5%BCec/indexx.php">Jednorożce</a>
