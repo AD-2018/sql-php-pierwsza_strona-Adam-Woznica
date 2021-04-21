@@ -54,16 +54,22 @@
                   echo("<br>");
                   echo($sql);
                   echo('<table border="1">');
-                  echo('<th>id_prod</th><th>producent</th>');
+                  echo('<th>id_prod</th><th>producent</th><th>X</th>');
               
                   while($wiersz=mysqli_fetch_assoc($wynik))
                   {
                       echo('<tr>');
-                      echo('<td>'.$wiersz['id_prod'].'</td>'.'<td>'.$wiersz['producent'].'</td>');
-                      echo('</tr>');
-                  }
-              
-                  echo('</table>');
+                      echo('<td>'.$wiersz['id_prod'].'</td>'.'<td>'.$wiersz['producent'].'</td>'.'<td>
+
+                      <form action="producenci.php" method="POST">
+                       <input name="id" value="'.$wiersz['id_prod'].'" hidden>
+                        <input type="submit" class="button_x" value="X">
+                      </form>
+
+                      </td>');
+                     echo('</tr>');
+                 }
+              echo("</table>");
                   
               echo("<br>");
 
