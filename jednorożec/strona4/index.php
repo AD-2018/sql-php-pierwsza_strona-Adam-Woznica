@@ -23,15 +23,21 @@
                   echo("<br>");
                   echo($sql);
                   echo('<table border="1">');
-                  echo('<th>id_fryzjer</th><th>fryzjer</th>');
+                  echo('<th>id_fryzjer</th><th>fryzjer</th><th>X</th>');
               
                   while($wiersz=mysqli_fetch_assoc($wynik))
                   {
                       echo('<tr>');
-                      echo('<td>'.$wiersz['id_fryzjer'].'</td>'.'<td>'.$wiersz['fryzjer'].'</td>');
-                      echo('</tr>');
+                      echo('<td>'.$wiersz['id_fryzjer'].'</td>'.'<td>'.$wiersz['fryzjer'].'<td>
+
+                      <form action="fryzjer.php" method="POST">
+                       <input name="id" value="'.$wiersz['id_fryzjer'].'" hidden>
+                        <input type="submit" class="button_x" value="X">
+                      </form>
+      
+                      </td>');
+                     echo('</tr>');
                   }
-              
                   echo('</table>');
                   
               echo("<br>");
@@ -53,13 +59,20 @@
                   echo("<br>");
                   echo($sql);
                   echo('<table border="1">');
-                  echo('<th>id_klient</th><th>klient</th>');
+                  echo('<th>id_klient</th><th>klient</th><th>X</th>');
               
                   while($wiersz=mysqli_fetch_assoc($wynik))
                   {
                       echo('<tr>');
-                      echo('<td>'.$wiersz['id_klient'].'</td>'.'<td>'.$wiersz['klient'].'</td>');
-                      echo('</tr>');
+                      echo('<td>'.$wiersz['id_klient'].'</td>'.'<td>'.$wiersz['klient'].'<td>
+
+                      <form action="klient.php" method="POST">
+                       <input name="id" value="'.$wiersz['id_klient'].'" hidden>
+                        <input type="submit" class="button_x" value="X">
+                      </form>
+      
+                      </td>');
+                     echo('</tr>');
                   }
               
                   echo('</table>');
@@ -83,13 +96,20 @@
                   echo("<br>");
                   echo($sql);
                   echo('<table border="1">');
-                  echo('<th>id</th><th>fryzjer</th><th>klient</th>');
+                  echo('<th>id</th><th>fryzjer</th><th>klient</th><th>X</th>');
               
                   while($wiersz=mysqli_fetch_assoc($wynik))
                   {
                       echo('<tr>');
-                      echo('<td>'.$wiersz['id'].'</td>'.'<td>'.$wiersz['fryzjer'].'</td>'.'<td>'.$wiersz['klient'].'</td>');
-                      echo('</tr>');
+                      echo('<td>'.$wiersz['id'].'</td>'.'<td>'.$wiersz['fryzjer'].'</td>'.'<td>'.$wiersz['klient'].'<td>
+
+                      <form action="spa.php" method="POST">
+                       <input name="id" value="'.$wiersz['id'].'" hidden>
+                        <input type="submit" class="button_x" value="X">
+                      </form>
+      
+                      </td>');
+                     echo('</tr>');
                   }
               
                   echo('</table>');
