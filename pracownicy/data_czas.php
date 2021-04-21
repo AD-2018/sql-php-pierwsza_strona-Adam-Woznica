@@ -8,13 +8,9 @@
     <h1>Adam Woźnica !</h1>
     <nav>
         <ul>
-            <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-Adam-Woznica">EXIT</a>
-            <a href="../index.php">Strona Główna</a>
-            <a href="pracownicy_organizacja.php">Pracow. i Org.</a>
-            <a href="funkcje_agregujace.php">Funkcje Agregujace</a>
-            <a href="data_czas.php">Data i Czas</a>
-            <a href="formularz.html">Formularze</a>
-            <a href="danedobazy.php">+ i -</a>
+        <?php 
+           include_once("../menu.php");
+           ?>
           </ul>
     </nav>
     
