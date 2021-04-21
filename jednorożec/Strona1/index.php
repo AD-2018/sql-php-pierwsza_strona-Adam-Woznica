@@ -24,15 +24,20 @@
                   echo("<br>");
                   echo($sql);
                   echo('<table border="1">');
-                  echo('<th>id_produkt</th><th>produkt</th>');
+                  echo('<th>id_produkt</th><th>produkt</th><th>X</th>');
               
                   while($wiersz=mysqli_fetch_assoc($wynik))
                   {
                       echo('<tr>');
-                      echo('<td>'.$wiersz['id_produkt'].'</td>'.'<td>'.$wiersz['produkt'].'</td>');
-                      echo('</tr>');
-                  }
-              
+                      echo('<td>'.$wiersz['id_produkt'].'</td>'.'<td>'.$wiersz['produkt'].'<td>
+
+                      <form action="produkty.php" method="POST">
+                       <input name="id" value="'.$wiersz['id_produkt'].'" hidden>
+                        <input type="submit" class="button_x" value="X">
+                      </form>
+
+                      </td>');
+                     echo('</tr>');
                   echo('</table>');
                   
               echo("<br>");
@@ -90,15 +95,20 @@
                   echo("<br>");
                   echo($sql);
                   echo('<table border="1">');
-                  echo('<th>id</th><th>producent</th><th>produkt</th>');
+                  echo('<th>id</th><th>producent</th><th>produkt</th><th>X</th>');
               
                   while($wiersz=mysqli_fetch_assoc($wynik))
                   {
                       echo('<tr>');
-                      echo('<td>'.$wiersz['id'].'</td>'.'<td>'.$wiersz['producent'].'</td>'.'<td>'.$wiersz['produkt'].'</td>');
-                      echo('</tr>');
-                  }
-              
+                      echo('<td>'.$wiersz['id'].'</td>'.'<td>'.$wiersz['producent'].'</td>'.'<td>'.$wiersz['produkt'].'<td>
+
+                      <form action="sklep.php" method="POST">
+                       <input name="id" value="'.$wiersz['id'].'" hidden>
+                        <input type="submit" class="button_x" value="X">
+                      </form>
+
+                      </td>');
+                     echo('</tr>');
                   echo('</table>');
                   
               echo("<br>");
