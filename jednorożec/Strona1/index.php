@@ -38,6 +38,7 @@
 
                       </td>');
                      echo('</tr>');
+                  }
                   echo('</table>');
                   
               echo("<br>");
@@ -109,6 +110,7 @@
 
                       </td>');
                      echo('</tr>');
+                  }
                   echo('</table>');
                   
               echo("<br>");
